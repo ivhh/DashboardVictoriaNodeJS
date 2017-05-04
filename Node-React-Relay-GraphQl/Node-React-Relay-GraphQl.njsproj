@@ -43,9 +43,15 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
+    <Content Include="views\Ausentes\Html\Ausentes.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\Ausentes\Scripts\Ausentes.jsx">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\index\app.jsx" />
     <Content Include="views\index\index.html" />
-    <Content Include="views\index\index.jade" />
+    <Content Include="views\index\index.pug" />
     <Content Include="views\index\index.jsx" />
     <Content Include="views\layout.pug" />
     <Content Include="views\error.pug" />
@@ -67,7 +73,10 @@
     <Folder Include="typings\globals\mime\" />
     <Folder Include="typings\globals\serve-static\" />
     <Folder Include="views\" />
+    <Folder Include="views\Ausentes\Html\" />
+    <Folder Include="views\Ausentes\Scripts\" />
     <Folder Include="views\index\" />
+    <Folder Include="views\Ausentes\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="main.js" />

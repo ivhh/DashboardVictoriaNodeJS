@@ -1,7 +1,7 @@
 ﻿import debug = require('debug');
 import express = require('express');
 import path = require('path');
-import jade = require('jade');
+//import pug = require('pug');
 import jsx = require('node-jsx');  
 
 import routes from './routes/index';
@@ -11,7 +11,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
