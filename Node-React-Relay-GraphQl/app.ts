@@ -1,6 +1,8 @@
 ﻿import debug = require('debug');
 import express = require('express');
 import path = require('path');
+import jade = require('jade');
+import jsx = require('node-jsx');  
 
 import routes from './routes/index';
 import users from './routes/user';
@@ -9,7 +11,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+app.set('view engine', 'jade');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -48,6 +50,8 @@ app.use((err: any, req, res, next) => {
 });
 
 app.set('port', process.env.PORT || 3000);
+
+jsx.install({ harmony: true });
 
 var server = app.listen(app.get('port'), function () {
     debug('Express server listening on port ' + server.address().port);

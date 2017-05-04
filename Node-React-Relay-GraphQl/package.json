@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "build": "webpack --config webpack.production.config.js --progress --profile --colors"
   },
   "description": "Node-React-Relay-GraphQl",
   "author": {
@@ -13,11 +14,17 @@
   "dependencies": {
     "debug": "^2.2.0",
     "express": "^4.14.0",
-    "pug": "^2.0.0-beta6",
     "node-sass": "^4.3.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
-    "sass-loader": "^6.0.2"
+    "sass-loader": "^6.0.2",
+    "jade": "^1.7.0",
+    "node-jsx": "^0.13.3",
+    "webpack": "^2.4.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
   },
   "repository": {
     "type": "git",

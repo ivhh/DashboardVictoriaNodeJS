@@ -43,7 +43,10 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
-    <Content Include="views\index.pug" />
+    <Content Include="views\index\app.jsx" />
+    <Content Include="views\index\index.html" />
+    <Content Include="views\index\index.jade" />
+    <Content Include="views\index\index.jsx" />
     <Content Include="views\layout.pug" />
     <Content Include="views\error.pug" />
   </ItemGroup>
@@ -51,6 +54,7 @@
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
+    <Folder Include="public\script\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="Scripts\" />
@@ -63,6 +67,12 @@
     <Folder Include="typings\globals\mime\" />
     <Folder Include="typings\globals\serve-static\" />
     <Folder Include="views\" />
+    <Folder Include="views\index\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="main.js" />
+    <Compile Include="public\javascripts\bundle.js" />
+    <Compile Include="webpack.config.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
