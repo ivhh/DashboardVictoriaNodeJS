@@ -2,8 +2,10 @@
 var debug = require("debug");
 var express = require("express");
 var path = require("path");
-//import pug = require('pug');
 var jsx = require("node-jsx");
+var mongoose = require("mongoose");
+var graphQLHTTP = require("express-graphql");
+var schema = require("./data/schema");
 var index_1 = require("./routes/index");
 var user_1 = require("./routes/user");
 var app = express();
@@ -44,5 +46,12 @@ app.set('port', process.env.PORT || 3000);
 jsx.install({ harmony: true });
 var server = app.listen(app.get('port'), function () {
     debug('Express server listening on port ' + server.address().port);
+});
+var GRAPHQL_PORT = 8000;
+var graphQLServer = express();
+graphQLServer.use('/', graphQLHTTP({ schema: schema, pretty: true }));
+graphQLServer.listen(GRAPHQL_PORT, function () {
+    console.log("GraphQL Server is now running on http://localhost:" + GRAPHQL_PORT);
+    mongoose.connect('mongodb://localhost/test');
 });
 //# sourceMappingURL=app.js.map

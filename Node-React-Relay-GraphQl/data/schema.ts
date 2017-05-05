@@ -1,0 +1,1 @@
+﻿import group = require('./models/group');

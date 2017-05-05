@@ -33,6 +33,14 @@
   </PropertyGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="data\models\group.ts">
+      <SubType>Code</SubType>
+      <TestFramework>ExportRunner</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="data\schema.ts">
+      <SubType>Code</SubType>
+      <TestFramework>ExportRunner</TestFramework>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="routes\index.ts" />
     <TypeScriptCompile Include="routes\user.ts" />
     <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
@@ -57,6 +65,8 @@
     <Content Include="views\error.pug" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\models\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
