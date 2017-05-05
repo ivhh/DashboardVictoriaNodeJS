@@ -1,1 +1,1 @@
-﻿import group = require('./models/group');
+﻿//import group = require('./models/group/group');

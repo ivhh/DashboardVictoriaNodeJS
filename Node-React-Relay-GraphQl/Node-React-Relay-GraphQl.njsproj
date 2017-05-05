@@ -33,21 +33,26 @@
   </PropertyGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="data\models\group.ts">
-      <SubType>Code</SubType>
-      <TestFramework>ExportRunner</TestFramework>
-    </TypeScriptCompile>
     <TypeScriptCompile Include="data\schema.ts">
       <SubType>Code</SubType>
       <TestFramework>ExportRunner</TestFramework>
     </TypeScriptCompile>
     <TypeScriptCompile Include="routes\index.ts" />
     <TypeScriptCompile Include="routes\user.ts" />
+    <TypeScriptCompile Include="Scripts\miscellaneous\populateDB.ts">
+      <SubType>Code</SubType>
+      <TestFramework>ExportRunner</TestFramework>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <Content Include="data\models\group\GroupMutationsQL.js" />
+    <Content Include="data\models\group\GroupQL.js" />
+    <Content Include="data\models\group\GroupQueriesQL.js" />
+    <Content Include="data\models\group\GroupSchema.js" />
+    <Content Include="data\models\group\GroupTypeQL.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
@@ -67,6 +72,7 @@
   <ItemGroup>
     <Folder Include="data\" />
     <Folder Include="data\models\" />
+    <Folder Include="data\models\group\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
@@ -74,6 +80,7 @@
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Scripts\miscellaneous\" />
     <Folder Include="Scripts\typings\" />
     <Folder Include="Scripts\typings\node\" />
     <Folder Include="typings\" />

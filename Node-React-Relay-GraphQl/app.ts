@@ -5,7 +5,7 @@ import jsx = require('node-jsx');
 import mongoose = require('mongoose');
 
 import graphQLHTTP = require('express-graphql');
-import schema = require('./data/schema');
+//import schema = require('./data/schema');
 
 import routes from './routes/index';
 import users from './routes/user';
@@ -62,9 +62,9 @@ var server = app.listen(app.get('port'), function () {
 
 const GRAPHQL_PORT = 8000;
 
-var graphQLServer = express();
-graphQLServer.use('/', graphQLHTTP({ schema: schema, pretty: true }));
-graphQLServer.listen(GRAPHQL_PORT, () => {
-    console.log(`GraphQL Server is now running on http://localhost:${GRAPHQL_PORT}`);
-    mongoose.connect('mongodb://localhost/test');
-});
+//var graphQLServer = express();
+//graphQLServer.use('/', graphQLHTTP({ schema: schema, pretty: true }));
+//graphQLServer.listen(GRAPHQL_PORT, () => {
+//    console.log(`GraphQL Server is now running on http://localhost:${GRAPHQL_PORT}`);
+//    mongoose.connect('mongodb://localhost/test');
+//});
