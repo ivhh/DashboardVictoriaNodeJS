@@ -53,6 +53,7 @@
     <Content Include="data\models\group\GroupQueriesQL.js" />
     <Content Include="data\models\group\GroupSchema.js" />
     <Content Include="data\models\group\GroupTypeQL.js" />
+    <Content Include="node.exe" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
