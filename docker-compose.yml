@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  dashboard-datamanagement:
+    image: dashboard-datamanagement
+    build:
+      context: ./Dashboard-DataManagement
+      dockerfile: Dockerfile
