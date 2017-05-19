@@ -14,7 +14,8 @@
     <ProjectGuid>840c1260-280d-4cf2-85bb-ce253ecac913</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

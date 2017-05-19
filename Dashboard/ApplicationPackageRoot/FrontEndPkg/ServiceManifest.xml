@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceManifest Name="Guest1Pkg"
+<ServiceManifest Name="FrontEndPkg"
                  Version="1.0.0"
                  xmlns="http://schemas.microsoft.com/2011/01/fabric"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
@@ -7,7 +7,7 @@
   <ServiceTypes>
     <!-- This is the name of your ServiceType. 
          The UseImplicitHost attribute indicates this is a guest executable service. -->
-    <StatelessServiceType ServiceTypeName="Guest1Type" UseImplicitHost="true" />
+    <StatelessServiceType ServiceTypeName="FrontEndType" UseImplicitHost="true" />
   </ServiceTypes>
 
   <!-- Code package is your service executable. -->
@@ -42,7 +42,7 @@
       <!-- This endpoint is used by the communication listener to obtain the port on which to 
            listen. Please note that if your service is partitioned, this port is shared with 
            replicas of different partitions that are placed in your code. -->
-      <Endpoint Name="Guest1TypeEndpoint" Protocol="http" Port="3000" Type="Input"/>
+      <Endpoint Name="FrontEndTypeEndpoint" Protocol="http" Port="3000" Type="Input"/>
     </Endpoints>
   </Resources>
 </ServiceManifest>
